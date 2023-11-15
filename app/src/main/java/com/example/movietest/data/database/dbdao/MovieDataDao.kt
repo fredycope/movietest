@@ -18,8 +18,8 @@ interface MovieDataDao {
     @Query("DELETE FROM "+MovieTest.TABLE_NAME+" WHERE mov_id = :mId")
     suspend fun deleteId(mId: String)
 
-    @Query("SELECT * FROM " + MovieTest.TABLE_NAME)
-    suspend fun getListMov(): List<MovieTest>
+    @Query("SELECT * FROM " + MovieTest.TABLE_NAME+" WHERE type_movie = :typeMovie")
+    suspend fun getListMov(typeMovie: Int): List<MovieTest>
 
     @Query("DELETE FROM "+MovieTest.TABLE_NAME)
     suspend fun deleteAll()

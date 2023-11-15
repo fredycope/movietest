@@ -7,7 +7,7 @@ import kotlinx.coroutines.withContext
 
 class GetDataUseCase (private val dataBaseRepository: DataBaseRepository) {
 
-    suspend fun invoke(): List<MovieTest> = withContext(Dispatchers.IO){
-         dataBaseRepository.getData()
+    suspend fun invoke(typeMovie: Int): List<MovieTest> = withContext(Dispatchers.IO) {
+         dataBaseRepository.getData(typeMovie)
     }
 }

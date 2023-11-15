@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.movietest.R
 import com.example.movietest.databinding.ListItemBinding
-import com.example.movietest.domain.model.Results
+import com.example.movietest.domain.model.movie.Results
 import com.example.movietest.utils.OnClickList
 import com.google.gson.Gson
 

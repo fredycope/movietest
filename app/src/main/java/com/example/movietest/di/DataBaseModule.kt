@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.room.Room
 import com.example.movietest.data.database.db.MovieDataBase
 import com.example.movietest.data.database.dbdao.MovieDataDao
+import com.example.movietest.data.database.dbdao.ProfileDataDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -26,6 +27,11 @@ class DataBaseModule {
     @Provides
     fun provideGsDataDao(movieDataBase: MovieDataBase): MovieDataDao {
         return movieDataBase.movieDataDao()
+    }
+
+    @Provides
+    fun provideProfileDataDao(movieDataBase: MovieDataBase): ProfileDataDao {
+        return movieDataBase.profileDataDao()
     }
 
 }

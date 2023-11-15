@@ -6,7 +6,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
 class DataBaseRepository(private val movieDataDao: MovieDataDao) {
-    suspend fun getData() = movieDataDao.getListMov()
+    suspend fun getData(typeMovie: Int) = movieDataDao.getListMov(typeMovie)
 
     suspend fun saveData(movieTest: MovieTest) = movieDataDao.insert(movieTest)
 

@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">MovieTest</string>
+    <string name="perfil">perfil</string>
+    <string name="lista">lista</string>
+    <string name="mapa">mapa</string>
+    <string name="imagenes">imagenes</string>
+
+    <string name="populars">Populars</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="galery">Galery</string>
+    <string name="name">Name: </string>
+    <string name="original_name">Original Name:</string>
+    <string name="overview">Overview:</string>
 </resources>
